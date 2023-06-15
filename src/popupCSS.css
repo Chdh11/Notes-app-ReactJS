@@ -1,0 +1,82 @@
+.popup-grid-container{
+    display: grid;
+    grid-template-columns: 72% 21% 7%;
+    grid-template-rows: 15% 70% 15%;
+    height: 350px;
+    border: 1px solid rgb(168, 163, 163);
+    border-radius: 10px;
+    padding: 15px 15px 15px 15px;
+    grid-row-gap:5px;
+    margin: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    background-color: white;
+    box-shadow: 0px 0px 0px 100vh rgba(0, 0, 0, 0.496);
+}
+.popup-grid-container .popup-title{
+    border-bottom: 0.07px solid rgba(9, 9, 9, 0.251);
+}
+.popup-grid-container .popup-title input{
+    width: 95%;
+    height: 90%;
+    padding-left: 10px;
+    border: none;
+    font-size:18px ;
+    font-weight: 550;
+}
+.popup-grid-container .popup-title input:focus{
+    outline: none;
+}
+.popup-grid-container .popup-date{
+    /* background-color: blue; */
+    align-self: center;
+    justify-content: end;
+    padding-bottom: 7px;
+    font-size: 13px;
+}
+.popup-grid-container .popup-edit-button{
+    width: 33px;
+    height: 33px;
+    justify-self: start;
+    align-self: center;
+    padding-bottom: 7px;
+    transition: transform 0.2s;
+}
+.popup-grid-container .popup-edit-button:hover{
+    transform: scale(1.2);
+}
+.popup-grid-container .popup-content{
+    /* background-color: red; */
+    grid-column: 1/-1; 
+    color: black;
+}
+.popup-grid-container .popup-content textarea{
+    width: 95%;
+    height: 95%;
+    padding: 10px 5px 5px 15px;
+    border: none;
+    color: black;
+
+}
+.popup-grid-container .popup-content textarea:focus{
+    outline: none;
+}
+.popup-grid-container .popup-done-button{
+    width: 50px;
+    height: 50px;
+    grid-column: 1/-1;
+    justify-self: end;
+    /* align-self: center;
+    /* padding-bottom: 10px; */
+    /* padding-right:37px ; */ 
+    position: relative;
+    right: 43px;
+    bottom: 25px;
+    transition: transform 0.2s;
+}
+.popup-grid-container .popup-done-button:hover{
+    transform: scale(1.1);
+}
