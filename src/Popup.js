@@ -1,5 +1,4 @@
 import React, { useContext, useReducer ,useState} from 'react'
-import edit from './note-edit.png'
 import done from './done.png'
 import './popupCSS.css'
 
@@ -33,7 +32,6 @@ return (
       <div className='popup-grid-container' style={{borderRightColor: props.col ,borderRightWidth:`8px`}} >
         <div className='popup-title'><input type='text' placeholder='Add Title' onChange={handleTitleChange}/></div>
         <div className='popup-date'>{new Date().toLocaleString("en-UK", { day : '2-digit', month: "long"})} {new Date().getFullYear()}</div>
-        <img src={edit} className='popup-edit-button' alt='Edit Note'/>
         <div className='popup-content'><textarea placeholder='Add Note'  onChange={handleContentChange}/></div>
         <img src={done} className='popup-done-button' alt='Done Note' onClick={handleDone}/>
       </div>

@@ -22,6 +22,9 @@
     width:55px;
     height:55px;
     transition: transform 0.2s;
+    position: fixed;
+    left:2%;
+    top:9%;
 }
 .gridContainerMain .sidebar img:hover{
     transform: scale(1.2);
@@ -44,6 +47,10 @@
     align-items: center;
     justify-content: space-around;
     height: 210px;
+    position: fixed;
+    left:3.4%;
+    top:17.5%;
+
 }
 
 .gridContainerMain .sidebar .color-button-container button{
@@ -56,6 +63,9 @@
 .gridContainerMain .sidebar .color-button-container button:hover{
     transform: scale(1.4);
     cursor: pointer;
+}
+.gridContainerMain .sidebar .color-button-container button:focus{
+    outline: none;
 }
 .gridContainerMain .header{
     /* background-color: darkorchid; */
@@ -82,10 +92,13 @@
     border-radius: 12px;
     border:none;
     display: grid;
-    grid-template-columns: 85% 15%;
+    grid-template-columns: 70% 15% 15%;
     grid-template-rows: 15% 70% 15%;
     padding: 15px 15px 15px 15px;
     text-align: left;
+    word-wrap:break-word;
+    word-break:keep-all;
+    overflow: hidden;
 }
 .gridContainerMain .main-content-grid .note .note-title{
     grid-column: 1/-1;
@@ -99,6 +112,8 @@
     padding-top: 10px;
     font-size: 12px;
     color: rgba(0, 0, 0, 0.717);
+    overflow: hidden;
+
 }
 .gridContainerMain .main-content-grid .note .note-date{
     grid-column: 1/2;
@@ -109,8 +124,9 @@
     color: rgb(88, 86, 86);
 }
 .gridContainerMain .main-content-grid .note img{
-    width:30px;
-    height: 30px;
+    width:27px;
+    height: 27px;
+    padding-right: 5px;
     justify-self: start;
     align-self: end;
     transition: transform 0.1s;

@@ -50,7 +50,7 @@ function App() {
         <div className='header'>Notes</div>
 
         <div className='main-content-grid'>
-          {NotesArray.length>0 ? NotesArray.map((item)=><Note notes={item} color={item[2]} date={item[3]}/>): (<p>No notes present at the moment</p>)}
+          {NotesArray.length>0 ? NotesArray.map((item)=><Note notes={item} color={item[2]} date={item[3]} />): (<p>No notes present at the moment</p>)}
         </div>
       </div>
       

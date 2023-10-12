@@ -1,6 +1,6 @@
 .popup-grid-container{
     display: grid;
-    grid-template-columns: 72% 21% 7%;
+    grid-template-columns: 72% 28%;
     grid-template-rows: 15% 70% 15%;
     height: 350px;
     border: 1px solid rgb(168, 163, 163);
